@@ -8,5 +8,5 @@ public class Perfil {
     private Long id;
     private String nombre;
 
-    // Getters y setters
+    
 }

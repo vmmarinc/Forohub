@@ -40,27 +40,7 @@ public class TopicoController {
     @Autowired
     private CursoRepository cursoRepository;
 
-//    @PutMapping("/{id}")
-//    @Transactional
-//    public Topico actualizar(@PathVariable Long id, @RequestBody Topico topico) {
-//        Topico topicoExistente = topicoRepository.findById(id).orElseThrow(() -> new RuntimeException("Tópico no encontrado"));
-//        topicoExistente.setTitulo(topico.getTitulo());
-//        topicoExistente.setMensaje(topico.getMensaje());
-//        topicoExistente.setStatus(topico.getStatus());
-//        return topicoRepository.save(topicoExistente);
-//    }
 
-//    @DeleteMapping("/{id}")
-//    @Transactional
-//    public void eliminar(@PathVariable Long id) {
-//        Topico topico = topicoRepository.findById(id).orElseThrow(() -> new RuntimeException("Tópico no encontrado"));
-//        topicoRepository.delete(topico);
-//    }
-
-    @PostMapping
-//    public Topico registrar(@Valid @RequestBody TopicoRequestDTO topicoRequest) {
-//        return topicoService.registrarNuevoTopico(topicoRequest);
-//    }
 
     public ResponseEntity<Topico> registrar(@Valid @RequestBody TopicoRequestDTO topicoRequestDTO) {
         Usuario autor = usuarioRepository.findById(topicoRequestDTO.getAutorId())

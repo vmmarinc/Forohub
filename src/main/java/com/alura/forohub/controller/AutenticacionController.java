@@ -29,16 +29,3 @@ public class AutenticacionController {
         return ResponseEntity.ok(JWTtoken);
     }
 }
-
-//    @Autowired
-//    private UsuarioService usuarioService;
-//
-//    @PostMapping("/login")
-//    public ResponseEntity<?> login(@RequestBody Usuario usuario) {
-//        Usuario user = usuarioService.findByCorreoElectronico(usuario.getCorreoElectronico());
-//        if (user == null) {
-//            throw new UsernameNotFoundException("User not found with email: " + usuario.getCorreoElectronico());
-//        }
-//        // lógica de autenticación...
-//        return ResponseEntity.ok("Login successful");
-//    }

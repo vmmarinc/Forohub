@@ -21,5 +21,5 @@ public class Respuesta {
     @ManyToOne
     private Usuario autor;
 
-    // Getters y setters
+    
 }
